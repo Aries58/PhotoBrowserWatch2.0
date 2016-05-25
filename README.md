@@ -5,4 +5,4 @@ PhotoBrowserWatch2.0
 
 ***
 #效果图
-![AppleWatch](https://github.com/Aries58/PhotoBrowserWatch2.0.git/blob/master/watchBrowser.gif)
+![AppleWatch](https://github.com/Aries58/PhotoBrowserWatch2.0/blob/master/watchBrowser.gif)
