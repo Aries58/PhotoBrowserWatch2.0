@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Aries-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Aries" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PhotoBrowserWatch2_0_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="3/7" textAlignment="center" id="OGc-4L-Uiq">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <button width="1" height="125" alignment="left" backgroundImage="3.jpg" id="Xmq-k5-viO">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <connections>
+                                <segue destination="QJe-Oh-1SA" kind="modal" id="NdB-7Q-mck"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="backImage" destination="Xmq-k5-viO" id="Zi3-PA-kDz"/>
+                        <outlet property="indexLabel" destination="OGc-4L-Uiq" id="2tC-rR-4KL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="168" y="91"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="4xS-ch-6J6">
+            <objects>
+                <controller hidesWhenLoading="NO" id="QJe-Oh-1SA" customClass="DetailInterfaceController" customModule="PhotoBrowserWatch2_0_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="mU7-jV-Svy">
+                            <items>
+                                <label alignment="left" text="姓名" id="C0x-3I-E6t"/>
+                                <label alignment="left" text="Label" id="79W-oU-7Em"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="FVz-u5-Uxj">
+                            <items>
+                                <label alignment="left" text="地区" id="WtE-Im-kfK"/>
+                                <label alignment="left" text="Label" id="pw1-t1-eMR"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="FHg-WQ-DIp">
+                            <items>
+                                <label alignment="left" text="职业" id="5Qn-OL-G2e"/>
+                                <label alignment="left" text="Label" id="3dE-ng-TV1"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="nameLabel" destination="79W-oU-7Em" id="814-pG-N0m"/>
+                        <outlet property="placeLabel" destination="pw1-t1-eMR" id="vVu-is-Oge"/>
+                        <outlet property="professionLabel" destination="3dE-ng-TV1" id="a2v-fr-mHK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="423" y="149"/>
+        </scene>
+    </scenes>
+</document>
